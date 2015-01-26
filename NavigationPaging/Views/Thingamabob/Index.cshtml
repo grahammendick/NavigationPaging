@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Thingamabob>
+@{
+    ViewBag.Title = "Thingamabobs";
+    Layout = "~/Views/_Layout.cshtml";
+}
+<div id="header">
+    @using (Html.BeginRefreshForm())
+    {
+        <label for="name">Filter by Name</label>
+        <input id="name" name="name" value="@StateContext.Bag.name" />
+    }
+    @Html.Sorter("Sort by Name", "name")
+</div>
+<div id="thingamabobs">
+    <ul>
+        @{
+            foreach (var thingamabob in Model)
+            {
+                <li>
+                    <a>
+                        <div class="pic">
+                            <img src="@Url.Content("~/Content/images/" + thingamabob.Name.ToLower() + ".png")" alt="@thingamabob.Name" />
+                        </div>
+                        <div>@thingamabob.Name</div>
+                    </a>
+                </li>
+            }
+        }
+    </ul>
+</div>
+<div id="footer">
+    @Html.Pager(5)
+</div>

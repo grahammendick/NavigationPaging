@@ -1,0 +1,138 @@
+﻿body{
+    background-color:#f1edc2;
+    font-family:Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+    padding:20px;
+}
+#content{
+    background-color:#fff;
+    max-width:960px;
+    min-width:240px;
+    margin:0 auto;
+    border-radius:25px;
+    padding-bottom:40px;
+}
+h1{
+    text-align:center;
+    font-size:5em;
+    padding:10px;
+    margin:10px;
+    font-weight:normal;
+    letter-spacing:2px;
+}
+#thingamabobs{
+    width:91.67%;
+    margin:0 auto;
+    text-align:center;
+}
+#thingamabobs ul{
+    list-style:none;
+    padding:0;
+}
+#thingamabobs li{
+    background-color:#fbf5e6;
+    display:inline-block;
+    width:210px;
+    border:1px solid #000;
+    margin:3px;
+    height:200px;
+    border-radius:10px;
+    overflow:hidden;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+#thingamabobs li img{
+    display:block;
+    width:130px;
+    height:130px;
+    margin:0 auto 3px auto;
+    border:none;
+}
+#thingamabobs li div.pic{
+    border:1px solid #000;
+    padding:5px;
+    margin:0 15px;
+    background-color:#fff;
+}
+#thingamabobs li div{
+    text-align:center;
+    font-size:1.8em;
+    line-height:1.5em;
+}
+#thingamabobs li a{
+    display:block;
+    padding:10px 0;
+}
+#footer, #header{
+    text-align:center;
+    font-size:1.8em;
+    padding-top:10px;
+    margin:0 auto;
+}
+#footer ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+#footer li{
+    display:inline-block;
+    margin:0 5px;
+}
+#header{
+	width:640px;
+	height:30px;
+	font-size:1.7em;
+}
+#header form{
+	float:left;
+}
+#header a{
+	float:right;
+}
+#thingamabob{
+    margin-top:-50px;
+    overflow:auto;
+}
+#thingamabob img{
+    width:270px;
+    height:270px;
+}
+#thingamabob div.pic{
+    float:left;
+    margin:0 60px;
+    text-align:center;
+}
+#profile{
+    margin:45px auto 0 auto;
+}
+h2{
+    margin:4px 0;
+    text-indent:35px;
+    letter-spacing:2px;
+}
+p{
+    font-size:1.4em;
+    margin:0;
+    font-style:italic;
+    padding:0 60px 0 0;
+}
+@media all and (max-width: 620px){
+    h1{
+        font-size:2em;
+        letter-spacing:1px;
+    }
+    p{
+        padding:0 10px;
+    }
+    #thingamabob{
+        margin-top:0;
+        overflow:visible;
+    }
+    #thingamabob div.pic{
+        float:none;
+        margin:0;
+    }
+    #profile{
+        margin:0 auto;
+    }
+}
