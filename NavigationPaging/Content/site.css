@@ -86,6 +86,11 @@ h1{
 #header form{
 	float:left;
 }
+input{
+    font-family:Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+	font-size:1.0em;
+	width:150px;
+}
 #header a{
 	float:right;
 }
